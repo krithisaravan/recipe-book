@@ -79,6 +79,14 @@ def _base_css() -> str:
         font-family: 'Fraunces', Georgia, serif !important;
         font-weight: 300 !important;
     }}
+    /* The rule above is broad enough to also catch Streamlit's own icon
+       spans (the expander chevron, etc.), which rely on an inline
+       font-family: "Material Symbols Rounded" to render as a glyph rather
+       than literal text like "arrow_drop_down". Our !important was beating
+       that inline style. This restores it specifically for icon spans. */
+    [data-testid="stIconMaterial"] {{
+        font-family: 'Material Symbols Rounded' !important;
+    }}
     [data-testid="stCaptionContainer"],
     [data-testid="stCaptionContainer"] p,
     .stCaption, small {{

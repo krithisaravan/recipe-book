@@ -12,11 +12,11 @@ from db import (
     get_ingredients, create_placeholder_ingredient,
     get_recipe_ingredients, set_recipe_ingredient, remove_recipe_ingredient,
 )
-from shared import apply_page_style, render_footer
+from shared import apply_page_style, render_footer, FAVICON_PATH
 
 init_db()
 
-st.set_page_config(page_title="Add a Recipe · My Recipe Book", page_icon="🧁", layout="wide")
+st.set_page_config(page_title="Add a Recipe · My Recipe Book", page_icon=FAVICON_PATH, layout="wide")
 apply_page_style("2_Recipes.py")
 
 st.markdown("""

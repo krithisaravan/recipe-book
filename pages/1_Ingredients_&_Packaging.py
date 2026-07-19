@@ -14,11 +14,11 @@ from db import (
     get_packaging, upsert_packaging, delete_packaging,
     UNIT_TO_GRAMS,
 )
-from shared import apply_page_style, render_footer
+from shared import apply_page_style, render_footer, FAVICON_PATH
 
 init_db()
 
-st.set_page_config(page_title="Manage Costs · My Recipe Book", page_icon="🧁", layout="wide")
+st.set_page_config(page_title="Manage Costs · My Recipe Book", page_icon=FAVICON_PATH, layout="wide")
 apply_page_style("1_Ingredients_&_Packaging.py")
 
 st.markdown(

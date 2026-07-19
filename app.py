@@ -8,11 +8,11 @@ from db import (
     init_db, get_ingredients, get_packaging, get_recipes,
     get_recipe_ingredients, get_products,
 )
-from shared import apply_page_style, render_footer
+from shared import apply_page_style, render_footer, FAVICON_PATH
 
 init_db()
 
-st.set_page_config(page_title="My Recipe Book", page_icon="🧁", layout="wide")
+st.set_page_config(page_title="My Recipe Book", page_icon=FAVICON_PATH, layout="wide")
 apply_page_style("app.py")
 
 ingredients = get_ingredients()

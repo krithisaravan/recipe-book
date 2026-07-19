@@ -17,11 +17,11 @@ from db import (
     get_setting_json, set_setting_json,
 )
 from scaling import ScaleTarget, BaselineRecipe, scale_product, Ingredient
-from shared import apply_page_style, render_footer, PALETTE
+from shared import apply_page_style, render_footer, PALETTE, FAVICON_PATH
 
 init_db()
 
-st.set_page_config(page_title="Quote a Cake · My Recipe Book", page_icon="🧁", layout="wide")
+st.set_page_config(page_title="Quote a Cake · My Recipe Book", page_icon=FAVICON_PATH, layout="wide")
 apply_page_style("3_Quote_a_Cake.py")
 
 st.markdown(f"""

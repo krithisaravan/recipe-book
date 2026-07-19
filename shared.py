@@ -2,6 +2,11 @@
 shared.py — common page setup: theme CSS + top navigation bar.
 """
 import streamlit as st
+from pathlib import Path
+
+# Resolved relative to this file, not the launch directory, so it works no
+# matter where `streamlit run` is invoked from.
+FAVICON_PATH = str(Path(__file__).parent / "favicon.png")
 
 PALETTE = {
     "bg":            "#F5EDE0",   # warm parchment
@@ -113,16 +118,16 @@ def _base_css() -> str:
         text-align: center;
         padding: 0.85rem 0.5rem;
         text-decoration: none !important;
-        color: {p['text']} !important;
+        color: {p['white']} !important;
         font-family: 'Fraunces', serif;
         font-size: 0.92rem;
         font-weight: 300;
-        background: {p['pink']};
-        border: 1px solid {p['pink_border']};
+        background: {p['terracotta']};
+        border: 1px solid {p['pink_accent']};
         border-radius: 12px 12px 0 0;
         transition: background 0.15s ease, padding 0.15s ease;
     }}
-    .main-nav-tab:hover {{ background: {p['pink_border']}; }}
+    .main-nav-tab:hover {{ background: {p['pink_accent']}; }}
     .main-nav-tab.active {{
         background: {p['black']} !important;
         color: {p['white']} !important;

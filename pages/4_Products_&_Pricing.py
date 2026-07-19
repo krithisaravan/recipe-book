@@ -17,11 +17,11 @@ from db import (
     get_packaging, get_products, upsert_product, delete_product,
 )
 from scaling import ScaleTarget, BaselineRecipe, scale_product, Ingredient
-from shared import apply_page_style, render_footer
+from shared import apply_page_style, render_footer, FAVICON_PATH
 
 init_db()
 
-st.set_page_config(page_title="Saved Products · My Recipe Book", page_icon="🧁", layout="wide")
+st.set_page_config(page_title="Saved Products · My Recipe Book", page_icon=FAVICON_PATH, layout="wide")
 apply_page_style("4_Products_&_Pricing.py")
 
 st.markdown("<h1 style='text-align:center; font-style:italic;'>Saved Products</h1>", unsafe_allow_html=True)

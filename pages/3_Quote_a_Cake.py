@@ -207,7 +207,7 @@ def cake_sketch_svg(shape: str, size_in: float, width_in: float, height_in: floa
     svg_body += draw()
 
     return (
-        f'<svg viewBox="0 0 {canvas_w} {canvas_h}" width="100%" height="170" '
+        f'<svg viewBox="0 0 {canvas_w} {canvas_h}" width="100%" height="260" '
         f'xmlns="http://www.w3.org/2000/svg">{svg_body}</svg>'
     )
 

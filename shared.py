@@ -118,16 +118,16 @@ def _base_css() -> str:
         text-align: center;
         padding: 0.85rem 0.5rem;
         text-decoration: none !important;
-        color: {p['white']} !important;
+        color: {p['text']} !important;
         font-family: 'Fraunces', serif;
         font-size: 0.92rem;
         font-weight: 300;
-        background: {p['terracotta']};
-        border: 1px solid {p['pink_accent']};
+        background: {p['pink']};
+        border: 1px solid {p['pink_border']};
         border-radius: 12px 12px 0 0;
         transition: background 0.15s ease, padding 0.15s ease;
     }}
-    .main-nav-tab:hover {{ background: {p['pink_accent']}; }}
+    .main-nav-tab:hover {{ background: {p['pink_border']}; }}
     .main-nav-tab.active {{
         background: {p['black']} !important;
         color: {p['white']} !important;

@@ -89,9 +89,9 @@ selected_recipe = next(
 # ── Page header ────────────────────────────────────────────────────────────────
 st.markdown("<h1 style='text-align:center; font-style:italic;'>Recipes</h1>", unsafe_allow_html=True)
 st.caption(
-    "Each recipe needs a **baseline** — the size and quantity the original "
+    "Each recipe needs a **baseline**: the size and quantity the original "
     "recipe is written for. The app scales everything else from that. "
-    "Don't have a price for an ingredient yet? Add it anyway — you can "
+    "Don't have a price for an ingredient yet? Add it anyway, and you can "
     "price it later from **Manage Costs**."
 )
 

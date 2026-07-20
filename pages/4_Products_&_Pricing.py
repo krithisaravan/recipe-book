@@ -27,7 +27,7 @@ apply_page_style("4_Products_&_Pricing.py")
 st.markdown("<h1 style='text-align:center; font-style:italic;'>Saved Products</h1>", unsafe_allow_html=True)
 st.caption(
     "Your catalog of standard sizes and packaging combos, for quick reference. "
-    "To actually price an order, use **Quote a Cake** — it works straight from "
+    "To actually price an order, use **Quote a Cake**, which works straight from "
     "a recipe and doesn't need a saved product first."
 )
 st.page_link("pages/3_Quote_a_Cake.py", label="Go to Quote a Cake →")
